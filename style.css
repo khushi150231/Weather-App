@@ -1,0 +1,119 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+ body,html{
+    height:100%;
+    width:100%;
+ }
+.container{
+    height:100%;
+    width:100%;
+    display:flex;
+    justify-content:center; 
+    align-items:center;
+    flex-direction:column;
+    background-color:#f1f1f1;
+    background-image:url("https://w0.peakpx.com/wallpaper/411/131/HD-wallpaper-landscape-cloudy-field-nature-sky-storm-weather.jpg");
+    background-size:cover;
+    background-position:center;
+}
+.container h1{
+    font-size:5rem;
+    color:#333;
+    margin-bottom:20px;
+}
+.searchbar{
+    width:100%;
+    max-width:800px;
+    height:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+}
+#City{
+    width:320px;
+    height:52px;
+    padding:0 18px;
+
+    font-size:18px;
+    color:#fff;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+    border:2px solid rgba(255,255,255,0.25);
+    border-radius:30px;
+    outline:none;
+    transition:.35s ease;
+}
+
+#City::placeholder{
+    color:rgba(255,255,255,0.8);
+}
+#search-btn{
+    padding:5px 20px;
+    font-size:1.2rem;
+    height:52px;
+    border:none;
+    background-color:#3333338b;
+    color:#fff;
+    cursor:pointer;
+    outline:none;
+    border-radius:30px;
+}
+
+.city-name{
+    width:800px;
+    margin-top:30px;
+}
+
+
+.city-box{
+    width:100%;
+    background:rgba(255, 255, 255, 0.503);
+    border-radius:18px;
+    padding:20px;
+    text-align:center;
+    margin-bottom:25px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.3);
+}
+
+.city-box h2{
+    font-size:2.2rem;
+    color:#22222261;
+}
+
+
+.detail{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+
+.box{
+    background:rgba(229, 222, 222, 0.655);
+    border-radius:18px;
+    padding:25px 15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.25);
+    transition:.3s;
+}
+
+.box:hover{
+    transform:translateY(-8px);
+}
+
+.box h3{
+    font-size:1.2rem;
+    margin-bottom:12px;
+    color:#444;
+}
+
+.box p{
+    font-size:1.4rem;
+    font-weight:bold;
+    color:#0b5ed7;
+}
